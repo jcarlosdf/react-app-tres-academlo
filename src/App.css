@@ -52,6 +52,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .dataInput label {
   color: var(--textTitlePrimary);
@@ -59,8 +60,10 @@ body{
 }
 .dataInput input {
   width: 90%;
+  height: 40px;
   border: none;
   border-radius: 20px;
+  padding: 5px 15px;
 }
 .dataInput button {
   margin: 10px;
@@ -79,8 +82,27 @@ body{
   background-color: #062226;
   color: #fbfbfb;
 }
-ul{
+.ulHidden{
   display: none;
+}
+.ulSearch {
+  border-radius: 0 0 20px 20px;
+  width: 90%;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 65px;
+  background-color: rgba(160, 185, 207, 0.5);
+}
+.ulSearch li{
+  list-style: none;
+  color: var(--textTitleCardPrimary);
+  font-size: 0.7rem;
+}
+.ulSearch li:hover{
+  background-color: var(--textTitleCardSecondary);
+  font-size: 1rem;
+  cursor: pointer;
 }
 .container .headerCard{
   text-align: center;
