@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Cards from "./Components/Cards";
+import rickMortyImage from "../public/Rick-Morty-poster.png"
 // import useFetch from "./CustomHooks/useFetch";
 // import { BiSearchAlt2 } from 'react-icons/fa';
 
@@ -116,7 +117,7 @@ console.log(newLocation)
     <div className="App">
       <div className="container">
         <div className="poster">
-          <img src="../public/Rick-Morty-poster.png" alt="" />
+          <img src={rickMortyImage} alt="" />
         </div>
         <div className="dataInput">
           <label htmlFor="search">Search</label>
